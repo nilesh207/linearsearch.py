@@ -1,7 +1,9 @@
+pos = 0
 def search(list, n):
   for i in range(len(list)-1):
     if list[i] == n:
-        return True
+      globals()['pos'] = i
+      return True
         
   return False
   
